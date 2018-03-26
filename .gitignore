@@ -58,9 +58,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# cheshmak project info
-cheshmak-projectv1.0/
-cheshmak-projectv1.0.*
+# documents info
+docs/
 
 # DS_Store
 .DS_Store
