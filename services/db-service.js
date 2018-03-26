@@ -37,7 +37,8 @@ async function signup(account, cb) {
         username: account.username,
         password: hashedPassword,
         name: account.name,
-        family: account.family
+        family: account.family,
+        email: account.email
     }).save(cb);
 }
 

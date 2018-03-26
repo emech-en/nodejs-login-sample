@@ -1,3 +1,5 @@
+const makeSentence = require('./make-sentence')
+
 // Read .env file.
 require('dotenv').config();
 // Load Mongoose config,
@@ -32,7 +34,7 @@ app.use(function(error, req, res, next) {
     } else {
         console.log(error);
         // pass error to next error middleware handler 
-        res.status(500).send('Internal Server Error');
+        res.status(500).send(makeSentence(['Internal', 'Server', 'Error']));
     }
 });
 
