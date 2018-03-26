@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
 # Runtime data
 pids
@@ -56,4 +57,11 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# cheshmak project info
+cheshmak-projectv1.0/
+cheshmak-projectv1.0.*
+
+# DS_Store
+.DS_Store
 

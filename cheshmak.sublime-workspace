@@ -1,0 +1,684 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"valida",
+				"validationError"
+			],
+			[
+				"sin",
+				"signupValidation"
+			],
+			[
+				"login",
+				"loginSchema"
+			],
+			[
+				"log",
+				"loginSchema"
+			],
+			[
+				"chec",
+				"checkSchema"
+			],
+			[
+				"isVa",
+				"isValidSignupReq"
+			],
+			[
+				"user",
+				"userService"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"shoul",
+				"shouldBlock"
+			],
+			[
+				"cen",
+				"censoreList"
+			],
+			[
+				"ces",
+				"censoreList"
+			],
+			[
+				"mac",
+				"macd2"
+			],
+			[
+				"labe",
+				"labels"
+			],
+			[
+				"getD",
+				"getDate"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"link",
+				"linkedFile"
+			],
+			[
+				"le",
+				"linkedFile"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"tot",
+				"totalFile"
+			],
+			[
+				"fil",
+				"files"
+			],
+			[
+				"pa",
+				"pair"
+			],
+			[
+				"down",
+				"downloader"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"tra",
+				"trade"
+			],
+			[
+				"data",
+				"datasets"
+			],
+			[
+				"Char",
+				"CHART_DATA"
+			],
+			[
+				"ca",
+				"candle3"
+			],
+			[
+				"can",
+				"candle"
+			],
+			[
+				"last",
+				"last3"
+			],
+			[
+				"al",
+				"allFiltered"
+			],
+			[
+				"all",
+				"allMacdis"
+			],
+			[
+				"CHAR",
+				"CHART_DATA"
+			],
+			[
+				"filter",
+				"filters"
+			],
+			[
+				"ma",
+				"macdis"
+			],
+			[
+				"ba",
+				"backgroundColor"
+			],
+			[
+				"lab",
+				"labels"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"diff",
+				"diffs"
+			],
+			[
+				"cal",
+				"candle"
+			],
+			[
+				"difs",
+				"diffstring"
+			],
+			[
+				"cha",
+				"changeToNegative"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"ini",
+				"indicators"
+			],
+			[
+				"fr",
+				"fromTmp"
+			],
+			[
+				"pro",
+				"program"
+			],
+			[
+				"pr",
+				"program"
+			],
+			[
+				"ex",
+				"exchange"
+			],
+			[
+				"exit",
+				"exit_err"
+			],
+			[
+				"get",
+				"getUTCFullYear"
+			],
+			[
+				"mu",
+				"minute"
+			],
+			[
+				"cons",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 909,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routers/user-service.js",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "configs/mongoose.js",
+			"settings":
+			{
+				"buffer_size": 80,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 89.0,
+		"last_filter": "install pack",
+		"selected_items":
+		[
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/emech/Projects/cheshmak"
+	],
+	"file_history":
+	[
+		"/Users/emech/Projects/cheshmak/user-service.js",
+		"/Users/emech/Projects/cheshmak/makeSentence.js",
+		"/Users/emech/Projects/the-guard-bot/config.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/handlers/censore.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/config.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/index.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/handlers/burst-blocker.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/utility.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/common-censore-list",
+		"/Users/emech/Projects/telegram-group-admin-bot/.gitignore",
+		"/Users/emech/Projects/telegram-group-admin-bot/handlers/close-group.js",
+		"/Users/emech/Projects/telegram-group-admin-bot/.git/COMMIT_EDITMSG",
+		"/Users/emech/Projects/telegram-group-admin-bot/.env",
+		"/Users/emech/Projects/telegram-group-admin-bot/sample-config.js",
+		"/Users/emech/Projects/binance/src/trader.js",
+		"/Users/emech/Projects/binance/package.json",
+		"/Users/emech/Projects/binance/src/indicators/EMA.js",
+		"/Users/emech/Projects/binance/src/indicators/MACD.js",
+		"/Users/emech/Projects/binance/src/utility.js",
+		"/Users/emech/Projects/binance/ui/index.html",
+		"/Users/emech/Projects/binance/src/strategy.js",
+		"/Users/emech/Projects/binance/src/downloader.js",
+		"/Users/emech/Projects/binance/src/aggregator.js",
+		"/Users/emech/Projects/binance/dist/aggregator.js",
+		"/Users/emech/Projects/binance/data/ETHUSDT/total",
+		"/Users/emech/Projects/binance/src/config.js",
+		"/Users/emech/Projects/binance/.babelrc",
+		"/Users/emech/Projects/binance/src/util.js",
+		"/Users/emech/Projects/binance/downloader.js",
+		"/Users/emech/Projects/binance/trader.js",
+		"/Users/emech/Projects/binance/data/ETHUSDT/2018-02-03",
+		"/Users/emech/Projects/gekko/strategies/micro-trade.js",
+		"/Users/emech/Projects/gekko/strategies/multi-candle.js",
+		"/Users/emech/Projects/gekko/config/strategies/multi-candle.toml",
+		"/Users/emech/Projects/gekko/package.json",
+		"/Users/emech/Projects/gekko/web/routes/backtest.js",
+		"/Users/emech/Projects/gekko/strategies/MACD.js",
+		"/Users/emech/Projects/gekko/strategies/rsi-bb.js",
+		"/Users/emech/Projects/gekko/config/strategies/micro-trade.toml",
+		"/Users/emech/Projects/gekko/sample-config.js",
+		"/Users/emech/Projects/gekko/custom-importer.js",
+		"/Users/emech/Projects/GroupButler/.luacheckrc",
+		"/Users/emech/Projects/GroupButler/lua/.env",
+		"/Users/emech/Projects/GroupButler/launch.sh",
+		"/Users/emech/Projects/the-guard-bot/plugins/emechplugin.js",
+		"/Users/emech/Projects/bitfinex/README.md",
+		"/Users/emech/Projects/bitfinex/index.js",
+		"/Users/emech/Projects/bitfinex/package.json",
+		"/Users/emech/Projects/bitfinex",
+		"/Users/emech/Projects/gekko/importer-xrp.js",
+		"/Users/emech/Projects/gekko/custom-importer-config.js",
+		"/Users/emech/Projects/gekko/core/util.js",
+		"/Users/emech/Projects/gekko/gekko.js",
+		"/Users/emech/Projects/gekko/tmp-config",
+		"/Users/emech/Projects/gekko/get-xrp-iota",
+		"/Users/emech/Projects/gekko/core/gekkoStream.js",
+		"/Users/emech/Projects/gekko/core/pipeline.js",
+		"/Users/emech/Projects/gekko/importer-iota.js",
+		"/Users/emech/Projects/gekko/node_modules/@slack/client/docs/_posts/2015-12-15-v1.5.1.md",
+		"/Applications/TorBrowser.app/Contents/Resources/TorBrowser/Tor/torrc-defaults",
+		"/Users/emech/Projects/gekko/importer-config.js",
+		"/Users/emech/Projects/gekko/.env",
+		"/Users/emech/Projects/gekko/config/strategies/rsi-bb.toml",
+		"/Users/emech/Projects/gekko/web/vue/UIconfig.js",
+		"/Users/emech/Projects/gekko/strategies/my-strategy.js",
+		"/Users/emech/Projects/gekko/strategies/indicators/RSI.js",
+		"/Users/emech/Projects/gekko/strategies/RSI.js",
+		"/Users/emech/Projects/gekko/bin/gekko_launch.sh",
+		"/Users/emech/Projects/gekko/config/strategies/CCI.toml",
+		"/Users/emech/Projects/gekko/config/strategies/MACD.toml",
+		"/Users/emech/Projects/gekko/bin/gekko_launch_screen.sh",
+		"/Users/emech/Projects/mongo-morgan/docker-compose.yml",
+		"/Users/emech/Projects/crypto-currency/docker-compose.yml",
+		"/Users/emech/Projects/crypto-currency/package.json",
+		"/Users/emech/Downloads/Telegram Desktop/saint/saint.f90",
+		"/Users/emech/Downloads/Telegram Desktop/saint/saint-now.f90",
+		"/Users/emech/Projects/dockers/react-native/Dockerfile",
+		"/Users/emech/Downloads/Telegram Desktop/saint/saint.vfproj",
+		"/Users/emech/Downloads/Telegram Desktop/saint/saint.u2d",
+		"/Users/emech/Downloads/Telegram Desktop/saint/saint.sln",
+		"/Users/emech/Projects/mava_7/mava_7/malekashtar.iml",
+		"/Users/emech/Projects/mava_7/mava_7/mvnw.cmd",
+		"/Users/emech/Projects/mava_7/mava_7/pom.xml",
+		"/Users/emech/Projects/mava_7/run-docker.sh",
+		"/Users/emech/Projects/mava_7/mava_7/.idea/workspace.xml",
+		"/Users/emech/Projects/mava_7/mava_7/mvnw",
+		"/Users/emech/Projects/dockers/OpenJdk/run-docker.sh",
+		"/Users/emech/Projects/dockers/OpenJdk/Dockerfile",
+		"/Users/emech/Projects/mongo-morgan/OpenJDK - jessi scom",
+		"/Users/emech/Projects/mongo-morgan/test/test.js",
+		"/Users/emech/Projects/mongo-morgan/mongo-morgan.sublime-project",
+		"/Users/emech/Projects/mongo-morgan/package.json",
+		"/Users/emech/Projects/mongo-morgan/Dockerfile",
+		"/Users/emech/Projects/mongo-morgan/package-lock.json",
+		"/Users/emech/Projects/Scripts/ping-all.sh",
+		"/Users/emech/Projects/mongo-morgan/LICENSE",
+		"/Users/emech/Projects/mongo-morgan/.git/COMMIT_EDITMSG"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"errors",
+			"err.",
+			"err",
+			"loginSchema",
+			"checkSchema",
+			"loginSchema",
+			"this.hasStringProps",
+			"hasStringProps",
+			"true",
+			"isBadLoginRequest",
+			"username",
+			"checkLoginRequest"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								627,
+								627
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routers/user-service.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 2.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "configs/mongoose.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cheshmak.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
