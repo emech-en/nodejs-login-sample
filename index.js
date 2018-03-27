@@ -1,4 +1,4 @@
-const makeSentence = require('./make-sentence')
+const makeSentence = require('./services/make-sentence')
 
 // Read .env file.
 require('dotenv').config();

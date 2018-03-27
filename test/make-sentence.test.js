@@ -1,4 +1,4 @@
-const makeSentece = require('../make-sentence');
+const makeSentece = require('../services/make-sentence');
 const assert = require('assert');
 
 describe('make-sentence module', function() {
