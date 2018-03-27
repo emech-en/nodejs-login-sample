@@ -5,33 +5,21 @@ function hashPassword(data) {
     return crypto.createHash('md5').update(data).digest('hex');
 }
 
-async function login(username, password, cb) {
-    // Hash password
+// Perform user authentication operation.
+// Using new async/await suntax.
+async function login(username, password) {
     hashedPassword = hashPassword(password);
 
-    try {
-        let user = await Models.Account.findOne({ 'username': username, 'password': hashedPassword }).exec();
-        if (!user)
-            return cb('UserNotFound');
-    } catch (err) { return cb(err); }
+    let user = await Models.Account.findOne({ 'username': username, 'password': hashedPassword }).exec();
+    if (user)
+        // User Authentication is completed successfully.  
+        return Promise.resolve(user);
 
-    return cb();
+    return Promise.reject('UserNotFound');
 }
 
-async function signup(account, cb) {
-    // Hash password
+async function signup(account) {
     hashedPassword = hashPassword(account.password);
-
-    try {
-        // Check 
-        let result = await Models.Account.find({ 'username': account.username }).exec();
-        if (result.length)
-            return cb('UsernameDuplicated');
-
-        result = await Models.Account.find({ 'email': account.email }).exec();
-        if (result.length)
-            return cb('EmailDuplicated');
-    } catch (err) { return cb(err) }
 
     return new Models.Account({
         username: account.username,
@@ -39,7 +27,7 @@ async function signup(account, cb) {
         name: account.name,
         family: account.family,
         email: account.email
-    }).save(cb);
+    }).save();
 }
 
 module.exports = {

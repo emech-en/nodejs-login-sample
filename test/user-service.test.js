@@ -84,7 +84,6 @@ describe('UserService', function() {
             var callArgs = userService.dbService.login.firstCall.args;
             callArgs[0].should.be.equal(req.body.username);
             callArgs[1].should.be.equal(req.body.password);
-            callArgs[2].should.be.Function();
         });
     });
 

@@ -49,22 +49,24 @@ class UserService {
         this.dbService = dbService;
     }
 
-    // Using old callback fashion.
-    login(req, res, next) {
-        this.dbService.login(req.body.username, req.body.password, function(err) {
-            if (err) return next(err);
-
+    async login(req, res, next) {
+        try {
+            await this.dbService.login(req.body.username, req.body.password);
             res.status(200).send('Login OK');
-        });
+        } catch (err) {
+            // console.log(err);
+            return next(err);
+        }
     }
 
-    // Using new async/await syntax
     async signup(req, res, next) {
         try {
             await this.dbService.signup(req.body);
-        } catch (err) { return next(err); }
-
-        res.status(200).send('Signup OK');
+            res.status(200).send('Signup OK');
+        } catch (err) {
+            // console.log(err);
+            return next(err);
+        }
     }
 
     getRouter() {
