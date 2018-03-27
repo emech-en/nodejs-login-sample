@@ -21,12 +21,12 @@ function checkValidationResult(req, res, next) {
     if (validationError.isEmpty())
         return next();
 
-    // If there is error parse error
-    const error = {
-        name: 'ReqValidation',
-        code: getErrorCode(validationError.mapped())
-    };
-    return next(error);
+    // or if there is validatione error call
+    // next middleware with error object.
+    return next({
+        code: getErrorCode(validationError.mapped()),
+        message: 'Bad Request.'
+    });
 }
 
 function getErrorCode(mappedError) {
@@ -51,10 +51,9 @@ class UserService {
 
     async login(req, res, next) {
         try {
-            await this.dbService.login(req.body.username, req.body.password);
-            res.status(200).send('Login OK');
+            let user = await this.dbService.login(req.body.username, req.body.password);
+            res.status(200).json(user.getView());
         } catch (err) {
-            // console.log(err);
             return next(err);
         }
     }
@@ -62,9 +61,11 @@ class UserService {
     async signup(req, res, next) {
         try {
             await this.dbService.signup(req.body);
-            res.status(200).send('Signup OK');
+            res.status(200).send({
+                status: 'ok',
+                message: 'User created.'
+            });
         } catch (err) {
-            // console.log(err);
             return next(err);
         }
     }

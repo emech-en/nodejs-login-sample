@@ -33,4 +33,13 @@ const AccountSchema = new Schema({
     }
 });
 
+AccountSchema.methods.getView = function() {
+    return {
+        username: this.username,
+        email: this.email,
+        name: this.name,
+        family: this.family
+    }
+}
+
 module.exports = mongoose.model('Account', AccountSchema);

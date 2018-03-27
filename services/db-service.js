@@ -1,5 +1,6 @@
 const Models = require('./../models/');
 const crypto = require('crypto');
+const makeSentence = require('./make-sentence');
 
 function hashPassword(data) {
     return crypto.createHash('md5').update(data).digest('hex');
@@ -15,7 +16,10 @@ async function login(username, password) {
         // User Authentication is completed successfully.  
         return Promise.resolve(user);
 
-    return Promise.reject('UserNotFound');
+    return Promise.reject({
+        code: 40,
+        message: makeSentence(['Invalid', 'username', 'or', 'password'])
+    });
 }
 
 async function signup(account) {
