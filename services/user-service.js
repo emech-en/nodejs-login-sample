@@ -20,7 +20,7 @@ function checkValidationResult(req, res, next) {
     // If there is no error call next middleware
     if (validationError.isEmpty())
         return next();
-
+    
     // or if there is validatione error call
     // next middleware with error object.
     return next({
