@@ -2,12 +2,10 @@ const makeSentence = require('./services/make-sentence')
 
 // Read .env file.
 require('dotenv').config();
-// Load Mongoose config,
-require('./configs/mongoose');
 
 const express = require('express');
 const morgan = require('morgan');
-const dbService = require('./services/db-service');
+const dbService = require('./services/rabbitmq');
 const UserService = require('./services/user-service');
 
 const userService = new UserService(express.Router(), dbService);

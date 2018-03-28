@@ -20,7 +20,7 @@ function checkValidationResult(req, res, next) {
     // If there is no error call next middleware
     if (validationError.isEmpty())
         return next();
-    
+
     // or if there is validatione error call
     // next middleware with error object.
     return next({
@@ -51,8 +51,8 @@ class UserService {
 
     async login(req, res, next) {
         try {
-            let user = await this.dbService.login(req.body.username, req.body.password);
-            res.status(200).json(user.getView());
+            const result = await this.dbService.login(req.body.username, req.body.password);
+            res.status(200).json(result);
         } catch (err) {
             return next(err);
         }
@@ -60,11 +60,8 @@ class UserService {
 
     async signup(req, res, next) {
         try {
-            await this.dbService.signup(req.body);
-            res.status(200).send({
-                status: 'ok',
-                message: 'User created.'
-            });
+            const result = await this.dbService.signup(req.body);
+            res.status(200).json(result);
         } catch (err) {
             return next(err);
         }

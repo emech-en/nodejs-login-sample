@@ -14,7 +14,7 @@ async function login(username, password) {
     let user = await Models.Account.findOne({ 'username': username, 'password': hashedPassword }).exec();
     if (user)
         // User Authentication is completed successfully.  
-        return Promise.resolve(user);
+        return Promise.resolve(user.getView());
 
     return Promise.reject({
         code: 40,
@@ -22,16 +22,17 @@ async function login(username, password) {
     });
 }
 
-function signup(account) {
+async function signup(account) {
     hashedPassword = hashPassword(account.password);
 
-    return new Models.Account({
+    let user = await new Models.Account({
         username: account.username,
         password: hashedPassword,
         name: account.name,
         family: account.family,
         email: account.email
     }).save();
+    return Promise.resolve(user.getView());
 }
 
 module.exports = {
