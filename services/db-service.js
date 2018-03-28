@@ -22,7 +22,7 @@ async function login(username, password) {
     });
 }
 
-async function signup(account) {
+function signup(account) {
     hashedPassword = hashPassword(account.password);
 
     return new Models.Account({
