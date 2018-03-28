@@ -19,7 +19,7 @@ app.use('/api/v1.0/auth/', userService.getRouter());
 
 app.use(function(error, req, res, next) {
     console.log('Error:', error);
-    if (error.code < 50) {
+    if (error.code < 100) {
         return res.status(400).json(error);
     } else {
         return res.status(500).json({

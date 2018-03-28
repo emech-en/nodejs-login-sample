@@ -33,6 +33,25 @@ const AccountSchema = new Schema({
     }
 });
 
+AccountSchema.post('save', function(err, doc, next) {
+    if (err.name !== 'BulkWriteError' || err.code !== 11000)
+        return next(err);
+
+    if (err.message.indexOf('username') > 0)
+        return next({
+            code: 50,
+            message: 'username is taken.'
+        });
+
+    if (err.message.indexOf('email') > 0)
+        return next({
+            code: 60,
+            message: 'email is taken.'
+        });
+
+    return next(err);
+});
+
 AccountSchema.methods.getView = function() {
     return {
         username: this.username,
