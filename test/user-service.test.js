@@ -5,30 +5,29 @@ const should = require('should');
 const UserService = require('../services/user-service');
 
 describe('UserService', function() {
-    let mockRouter, userService, mockDbService;
+    let mockRouter, userService, mockBroker;
 
     beforeEach(function() {
         mockRouter = {
             post: sinon.spy()
         };
-        mockDbService = {
-            login: sinon.spy(),
-            signup: sinon.spy(async function(account, cb) { return cb(); })
+        mockBroker = {
+            callService: sinon.spy(),
         };
 
-        userService = new UserService(mockRouter, mockDbService);
+        userService = new UserService(mockRouter, mockBroker);
     });
 
     afterEach(function() {
         mockRouter = undefined;
-        mockDbService = undefined;
+        mockBroker = undefined;
         userService = undefined;
     });
 
-    describe('#constructor(router, dbService)', function() {
-        it('Should set router and dbService', function() {
+    describe('#constructor(router, broker)', function() {
+        it('Should set router and broker', function() {
             assert.equal(userService.router, mockRouter);
-            assert.equal(userService.dbService, mockDbService);
+            assert.equal(userService.broker, mockBroker);
         });
 
         it('Should call router.post twice', function() {
@@ -73,17 +72,18 @@ describe('UserService', function() {
         const res = {};
         const next = function() {};
 
-        it('should call this.dbService.login', function() {
+        it('should call this.broker.callService', function() {
             userService.login(req, res, next);
-            assert.equal(userService.dbService.login.callCount, 1);
+            assert.equal(userService.broker.callService.callCount, 1);
         });
 
-        it('should call this.dbService.login with correct params', function() {
+        it('should call this.broker.callService with correct params', function() {
             userService.login(req, res, next);
 
-            var callArgs = userService.dbService.login.firstCall.args;
-            callArgs[0].should.be.equal(req.body.username);
-            callArgs[1].should.be.equal(req.body.password);
+            var callArgs = userService.broker.callService.firstCall.args;
+            callArgs[0].should.be.equal('db-service');
+            callArgs[1].should.be.equal('login');
+            callArgs[2].should.be.deepEqual({ username: req.body.username, password: req.body.password });
         });
     });
 
@@ -100,17 +100,18 @@ describe('UserService', function() {
         const res = {};
         const next = function() {};
 
-        it('should call this.dbService.signup', function() {
+        it('should call this.broker.callService', function() {
             userService.signup(req, res, next);
-            assert.equal(userService.dbService.signup.callCount, 1);
+            assert.equal(userService.broker.callService.callCount, 1);
         });
 
-        it('should call this.dbService.signup with correct params', function() {
+        it('should call this.broker.callService with correct params', function() {
             userService.signup(req, res, next);
 
-            var callArgs = userService.dbService.signup.firstCall.args;
-            var account = callArgs[0];
-            account.should.be.deepEqual(req.body);
+            var callArgs = userService.broker.callService.firstCall.args;
+            callArgs[0].should.be.equal('db-service');
+            callArgs[1].should.be.equal('signup');
+            callArgs[2].should.be.deepEqual({ account: req.body });
         });
     });
 });

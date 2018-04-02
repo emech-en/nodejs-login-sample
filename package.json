@@ -15,6 +15,8 @@
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "express-validator": "^5.0.3",
+    "moleculer": "^0.12.1",
+    "moleculer-repl": "^0.4.0",
     "mongoose": "^5.0.11",
     "morgan": "^1.9.0",
     "uniqid": "^4.1.1"

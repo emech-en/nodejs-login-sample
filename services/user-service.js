@@ -42,16 +42,16 @@ function getErrorCode(mappedError) {
 }
 
 class UserService {
-    constructor(router, dbService) {
+    constructor(router, broker) {
         this.router = router
         this.router.post('/login', loginValidation, checkValidationResult, (req, res, next) => this.login(req, res, next));
         this.router.post('/signup', signupValidation, checkValidationResult, (req, res, next) => this.signup(req, res, next));
-        this.dbService = dbService;
+        this.broker = broker;
     }
 
     async login(req, res, next) {
         try {
-            const result = await this.dbService.login(req.body.username, req.body.password);
+            const result = await this.broker.callService('db-service', 'login', { username: req.body.username, password: req.body.password });
             res.status(200).json(result);
         } catch (err) {
             return next(err);
@@ -60,7 +60,7 @@ class UserService {
 
     async signup(req, res, next) {
         try {
-            const result = await this.dbService.signup(req.body);
+            const result = await this.broker.callService('db-service', 'signup', { account: req.body });
             res.status(200).json(result);
         } catch (err) {
             return next(err);
